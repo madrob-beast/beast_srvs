@@ -1,0 +1,4 @@
+uint8 stiffness
+---
+bool success
+string message
