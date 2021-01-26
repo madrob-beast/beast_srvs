@@ -56,6 +56,9 @@ find_package(catkin REQUIRED COMPONENTS
 add_service_files(
   FILES
   SetStiffness.srv
+  SetWheelBraking.srv
+  SetWheelBrakingLUT.srv
+  SetWheelBrakingMode.srv
 )
 
 ## Generate actions in the 'action' folder

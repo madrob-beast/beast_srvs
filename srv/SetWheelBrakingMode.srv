@@ -1,0 +1,12 @@
+# Set wheel braking mode
+# Braking mode
+uint8 MODE_DISABLED = 0 # No control
+uint8 MODE_DYNAMIC = 1 # Dynamic braking setpoint (/braking topic)
+uint8 MODE_LUT = 2 # LUT
+uint8 MODE_STATIC = 3 # Static braking setpoint (/set_wheel_braking service)
+uint8 mode
+# Control mode, see above
+uint8 lut_index # LUT index 0..9
+---
+bool success
+string message
