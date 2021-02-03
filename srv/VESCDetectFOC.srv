@@ -1,0 +1,16 @@
+# VESC Detect FOC
+
+float32 max_power_loss # Maximum power loss
+float32 min_current_in # Maximum negative input current
+float32 max_current_in # Maximum positive input current
+float32 openloop_rpm   # Openloop ERPM
+float32 sl_erpm        # ???
+---
+float32 l_current_max          # Motor current
+float32 foc_motor_r            # Motor R
+float32 foc_motor_l            # Motor L
+float32 foc_motor_flux_linkage # Motor Flux Linkage
+uint8   foc_sensor_mode        # Sensors
+bool    foc_temp_comp          # Temp Comp
+bool    success                # Success
+string  message                # Success/error message

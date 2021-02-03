@@ -1,19 +1,20 @@
 # Set wheel braking LUT
+
 # Braking Method
-uint8 METHOD_FREE = 0
-uint8 METHOD_SPEED = 1
-uint8 METHOD_BRAKE = 2
-uint8 METHOD_HANDBRAKE = 3
-uint8 METHOD_ROTOR_LOCK = 4 #
+uint8   METHOD_FREE = 0          # Free
+uint8   METHOD_SPEED = 1         # Speed = 0 PID controller
+uint8   METHOD_BRAKE = 2         # VESC brake
+uint8   METHOD_HANDBRAKE = 3     # VESC handbrake
+uint8   METHOD_ROTOR_LOCK = 4    # VESC rotor lock
 
 # Setpoint measurement units
-uint8 MU_PERCENT = 0 # Setpoints are in % of maximum current
-uint8 MU_FORCE = 1 # Setpoints are in [g]
+uint8   MU_PERCENT = 0           # Setpoints are in % of maximum current
+uint8   MU_FORCE = 1             # Setpoints are in [g]
 
-uint8 index # LUT index, 0..10
-uint8 method # Braking method
-uint8 mu # Braking setpoint measurement units
-float32[360] values # Setpoints [g] or [%], depending on mu
+uint8        index   # LUT index, 0..10
+uint8        method  # Braking method
+uint8        mu      # Braking setpoint measurement units
+float32[360] values  # Setpoints [g] or [%], depending on mu
 ---
 bool success
 string message
